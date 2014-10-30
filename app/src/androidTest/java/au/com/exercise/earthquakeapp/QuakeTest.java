@@ -37,9 +37,8 @@ public class QuakeTest extends InstrumentationTestCase {
     public void testGetQuakeData() {
         latch = new CountDownLatch(1);
         quakeService.getQuakeData();
-
         try {
-            latch.await(DELAY_IN_MILLIS, TimeUnit.MILLISECONDS);
+            latch.await(2, TimeUnit.MINUTES);
         } catch(InterruptedException e) {
             e.printStackTrace();
         }
