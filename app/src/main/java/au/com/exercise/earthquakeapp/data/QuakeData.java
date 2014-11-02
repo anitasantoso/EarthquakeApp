@@ -11,4 +11,12 @@ public class QuakeData {
     private List<Quake> earthquakes;
 
     public QuakeData() {}
+
+    public int getCount() {
+        return count;
+    }
+
+    public List<Quake> getEarthquakes() {
+        return earthquakes;
+    }
 }
